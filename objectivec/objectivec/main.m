@@ -45,6 +45,20 @@ int main(int argc, const char * argv[]) {
         NSRange range = NSMakeRange(10, 5);
         const char *newQuote = [[wholeQuote stringByReplacingCharactersInRange:range withString:@"I did not say that"] UTF8String];
         printf("%s\n", newQuote);
+        
+        // Mutable string
+        NSMutableString *groceryList = [NSMutableString stringWithCapacity:50];
+        [groceryList appendFormat:@"%s", "Potato, Banana, Pasta"];
+        NSLog(@"groceryList : %@", groceryList);
+        // Remove string
+        [groceryList deleteCharactersInRange:NSMakeRange(0, 8)];
+        NSLog(@"groceryList : %@", groceryList);
+        // Add string
+        [groceryList insertString:@", Apple" atIndex:13];
+        NSLog(@"groceryList : %@", groceryList);
+        // Replace string
+        [groceryList replaceCharactersInRange:NSMakeRange(15, 5) withString:@"Orange"];
+        NSLog(@"groceryList : %@", groceryList);
     }
     return 0;
 }
