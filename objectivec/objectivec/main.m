@@ -13,6 +13,7 @@
 #import "Koala.h"
 #import "Animal+Exam.h"
 #import "Animal+Vet.h"
+#import "Dog.h"
 
 int mainBasic(int argc, const char * argv[]) {
     // @autoreleasepool will handle memory for us like releasing memory if unused
@@ -153,6 +154,14 @@ int main(int argc, const char * argv[]) {
         
         enum Ratings matrixRating = Great;
         NSLog(@"Matrix %u", matrixRating);
+        
+        // Dynamic binding
+        Dog *grover = [[Dog alloc]initWithName:@"Grower"];
+        NSArray *animals = [[NSArray alloc]initWithObjects:herbie, grover, nil];
+        id object1 = [animals objectAtIndex:0];
+        id object2 = [animals objectAtIndex:1];
+        [object1 makeSound];
+        [object2 makeSound];
         
     }
     return 0;

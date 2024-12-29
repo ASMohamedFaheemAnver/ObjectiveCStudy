@@ -27,6 +27,7 @@ NS_ASSUME_NONNULL_BEGIN
 // Notice here first method paramter doesn't have any name infront of it, it's a convention I guess
 -(int) getSum: (int) num1 nextNumber: (int) num2;
 
+-(void) makeSound;
 
 @end
 

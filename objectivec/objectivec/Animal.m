@@ -46,4 +46,8 @@
     return response;
 }
 
+-(void) makeSound{
+    NSLog(@"%@ says default!", self.name);
+}
+
 @end
