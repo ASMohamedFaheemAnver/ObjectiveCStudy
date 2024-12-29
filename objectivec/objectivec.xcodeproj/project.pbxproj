@@ -10,6 +10,8 @@
 		43FF74672D215232005D8E36 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 43FF74662D215232005D8E36 /* main.m */; };
 		43FF746F2D21989F005D8E36 /* Animal.m in Sources */ = {isa = PBXBuildFile; fileRef = 43FF746E2D21989F005D8E36 /* Animal.m */; };
 		43FF74722D219F69005D8E36 /* Koala.m in Sources */ = {isa = PBXBuildFile; fileRef = 43FF74712D219F69005D8E36 /* Koala.m */; };
+		43FF74752D21B578005D8E36 /* Animal+Exam.m in Sources */ = {isa = PBXBuildFile; fileRef = 43FF74742D21B578005D8E36 /* Animal+Exam.m */; };
+		43FF74782D21B6EF005D8E36 /* Animal+Vet.m in Sources */ = {isa = PBXBuildFile; fileRef = 43FF74772D21B6EF005D8E36 /* Animal+Vet.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -31,6 +33,10 @@
 		43FF746E2D21989F005D8E36 /* Animal.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Animal.m; sourceTree = "<group>"; };
 		43FF74702D219F69005D8E36 /* Koala.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Koala.h; sourceTree = "<group>"; };
 		43FF74712D219F69005D8E36 /* Koala.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Koala.m; sourceTree = "<group>"; };
+		43FF74732D21B578005D8E36 /* Animal+Exam.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Animal+Exam.h"; sourceTree = "<group>"; };
+		43FF74742D21B578005D8E36 /* Animal+Exam.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "Animal+Exam.m"; sourceTree = "<group>"; };
+		43FF74762D21B6EF005D8E36 /* Animal+Vet.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Animal+Vet.h"; sourceTree = "<group>"; };
+		43FF74772D21B6EF005D8E36 /* Animal+Vet.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "Animal+Vet.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +74,10 @@
 				43FF746E2D21989F005D8E36 /* Animal.m */,
 				43FF74702D219F69005D8E36 /* Koala.h */,
 				43FF74712D219F69005D8E36 /* Koala.m */,
+				43FF74732D21B578005D8E36 /* Animal+Exam.h */,
+				43FF74742D21B578005D8E36 /* Animal+Exam.m */,
+				43FF74762D21B6EF005D8E36 /* Animal+Vet.h */,
+				43FF74772D21B6EF005D8E36 /* Animal+Vet.m */,
 			);
 			path = objectivec;
 			sourceTree = "<group>";
@@ -129,6 +139,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				43FF74752D21B578005D8E36 /* Animal+Exam.m in Sources */,
+				43FF74782D21B6EF005D8E36 /* Animal+Vet.m in Sources */,
 				43FF74722D219F69005D8E36 /* Koala.m in Sources */,
 				43FF74672D215232005D8E36 /* main.m in Sources */,
 				43FF746F2D21989F005D8E36 /* Animal.m in Sources */,

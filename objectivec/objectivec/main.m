@@ -11,6 +11,8 @@
 // Importing custom defined class
 #import "Animal.h"
 #import "Koala.h"
+#import "Animal+Exam.h"
+#import "Animal+Vet.h"
 
 int mainBasic(int argc, const char * argv[]) {
     // @autoreleasepool will handle memory for us like releasing memory if unused
@@ -131,6 +133,9 @@ int main(int argc, const char * argv[]) {
     @autoreleasepool {
         Koala *herbie = [[Koala alloc] initWithName:@"Herbie"];
         NSLog(@"%@", [herbie talkToMe:@"Derek"]);
+        NSLog(@"Did %@ received shots : %d", herbie.name, [herbie checkedByVet]);
+        [herbie getShots];
+        [herbie getInfo];
     }
     return 0;
 }
