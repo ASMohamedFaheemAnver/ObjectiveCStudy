@@ -8,7 +8,7 @@
 // Fundemental header for logging and stuff
 #import <Foundation/Foundation.h>
 
-int main(int argc, const char * argv[]) {
+int mainBasic1(int argc, const char * argv[]) {
     // @autoreleasepool will handle memory for us like releasing memory if unused
     @autoreleasepool {
         NSLog(@"Hello, UDEV!");
@@ -59,6 +59,43 @@ int main(int argc, const char * argv[]) {
         // Replace string
         [groceryList replaceCharactersInRange:NSMakeRange(15, 5) withString:@"Orange"];
         NSLog(@"groceryList : %@", groceryList);
+    }
+    return 0;
+}
+
+int main(int argc, const char * argv[]) {
+    // @autoreleasepool will handle memory for us like releasing memory if unused
+    @autoreleasepool {
+        // Array
+        NSArray *officeSupplies = @[@"Pencils", @"Paper"];
+        NSLog(@"First : %@", officeSupplies[0]);
+        NSLog(@"Second : %@", officeSupplies[1]);
+        NSLog(@"Office supplies : %@", officeSupplies);
+        // Check if exist
+        BOOL containsItem = [officeSupplies containsObject:@"Pencils"];
+        NSLog(@"Need pencils: %d", containsItem);
+        // Check length
+        NSLog(@"Total : %d", (int)[officeSupplies count]);
+        // Check index
+        NSLog(@"Index of paper is at %lu", (unsigned long)[officeSupplies indexOfObject: @"Paper"]);
+        
+        // Mutable array
+        NSMutableArray *heros = [NSMutableArray arrayWithCapacity:5];
+        [heros addObject:@"Batman"];
+        [heros addObject:@"Flash"];
+        [heros addObject:@"Wonder women"];
+        [heros addObject:@"Kid flash"];
+        [heros insertObject:@"Superman" atIndex:2];
+        NSLog(@"%@", heros);
+        [heros removeObject:@"Flash"];
+        [heros removeObjectAtIndex:0];
+        [heros removeObjectIdenticalTo:@"Superman" inRange:NSMakeRange(0, 1)];
+        
+        // Iterate through array
+        for (int i = 0; i<[heros count]; i++) {
+            NSLog(@"%@", heros[i]);
+        }
+        
     }
     return 0;
 }
