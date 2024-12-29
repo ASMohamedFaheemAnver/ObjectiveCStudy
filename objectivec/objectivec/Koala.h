@@ -6,10 +6,11 @@
 //
 
 #import "Animal.h"
+#import "BeautyContest.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface Koala : Animal
+@interface Koala : Animal <BeautyContest>
 // Override super class talkToMe method
 -(NSString*) talkToMe:(NSString *)myName;
 -(void) performTrick;

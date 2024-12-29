@@ -37,6 +37,7 @@
 		43FF74742D21B578005D8E36 /* Animal+Exam.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "Animal+Exam.m"; sourceTree = "<group>"; };
 		43FF74762D21B6EF005D8E36 /* Animal+Vet.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Animal+Vet.h"; sourceTree = "<group>"; };
 		43FF74772D21B6EF005D8E36 /* Animal+Vet.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "Animal+Vet.m"; sourceTree = "<group>"; };
+		43FF74792D21B8F6005D8E36 /* BeautyContest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BeautyContest.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,6 +79,7 @@
 				43FF74742D21B578005D8E36 /* Animal+Exam.m */,
 				43FF74762D21B6EF005D8E36 /* Animal+Vet.h */,
 				43FF74772D21B6EF005D8E36 /* Animal+Vet.m */,
+				43FF74792D21B8F6005D8E36 /* BeautyContest.h */,
 			);
 			path = objectivec;
 			sourceTree = "<group>";

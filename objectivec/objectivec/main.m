@@ -136,6 +136,24 @@ int main(int argc, const char * argv[]) {
         NSLog(@"Did %@ received shots : %d", herbie.name, [herbie checkedByVet]);
         [herbie getShots];
         [herbie getInfo];
+        [herbie lookCute];
+        
+        // Anonymous function
+        float (^getArea) (float height, float width);
+        getArea = ^float(float width, float height){
+            return width*height;
+        };
+        NSLog(@"Area of 3 width and 50 height : %.1f", getArea(3, 50));
+        // Enum
+        enum Ratings {
+            Poor = 1,
+            Ok = 2,
+            Great = 3
+        };
+        
+        enum Ratings matrixRating = Great;
+        NSLog(@"Matrix %u", matrixRating);
+        
     }
     return 0;
 }

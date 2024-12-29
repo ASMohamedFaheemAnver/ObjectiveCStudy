@@ -21,4 +21,8 @@
     NSLog(@"%@ says udev!", self.name);
 }
 
+-(void) lookCute{
+    NSLog(@"%@ act super cute", self.name);
+}
+
 @end
