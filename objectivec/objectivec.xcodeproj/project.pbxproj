@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		43FF74672D215232005D8E36 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 43FF74662D215232005D8E36 /* main.m */; };
 		43FF746F2D21989F005D8E36 /* Animal.m in Sources */ = {isa = PBXBuildFile; fileRef = 43FF746E2D21989F005D8E36 /* Animal.m */; };
+		43FF74722D219F69005D8E36 /* Koala.m in Sources */ = {isa = PBXBuildFile; fileRef = 43FF74712D219F69005D8E36 /* Koala.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -28,6 +29,8 @@
 		43FF74662D215232005D8E36 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		43FF746D2D21989F005D8E36 /* Animal.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Animal.h; sourceTree = "<group>"; };
 		43FF746E2D21989F005D8E36 /* Animal.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Animal.m; sourceTree = "<group>"; };
+		43FF74702D219F69005D8E36 /* Koala.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Koala.h; sourceTree = "<group>"; };
+		43FF74712D219F69005D8E36 /* Koala.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Koala.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +66,8 @@
 				43FF74662D215232005D8E36 /* main.m */,
 				43FF746D2D21989F005D8E36 /* Animal.h */,
 				43FF746E2D21989F005D8E36 /* Animal.m */,
+				43FF74702D219F69005D8E36 /* Koala.h */,
+				43FF74712D219F69005D8E36 /* Koala.m */,
 			);
 			path = objectivec;
 			sourceTree = "<group>";
@@ -124,6 +129,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				43FF74722D219F69005D8E36 /* Koala.m in Sources */,
 				43FF74672D215232005D8E36 /* main.m in Sources */,
 				43FF746F2D21989F005D8E36 /* Animal.m in Sources */,
 			);

@@ -10,6 +10,7 @@
 
 // Importing custom defined class
 #import "Animal.h"
+#import "Koala.h"
 
 int mainBasic(int argc, const char * argv[]) {
     // @autoreleasepool will handle memory for us like releasing memory if unused
@@ -104,7 +105,7 @@ int mainArray(int argc, const char * argv[]) {
 }
 
 
-int main(int argc, const char * argv[]) {
+int mainAnimal(int argc, const char * argv[]) {
     // @autoreleasepool will handle memory for us like releasing memory if unused
     @autoreleasepool {
         // Defalt initialize
@@ -122,4 +123,14 @@ int main(int argc, const char * argv[]) {
         // Access variable
         NSLog(@"The cat name is %@", [cat name]);
     }
+    return 0;
+}
+
+int main(int argc, const char * argv[]) {
+    // @autoreleasepool will handle memory for us like releasing memory if unused
+    @autoreleasepool {
+        Koala *herbie = [[Koala alloc] initWithName:@"Herbie"];
+        NSLog(@"%@", [herbie talkToMe:@"Derek"]);
+    }
+    return 0;
 }
