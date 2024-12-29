@@ -8,7 +8,10 @@
 // Fundemental header for logging and stuff
 #import <Foundation/Foundation.h>
 
-int mainBasic1(int argc, const char * argv[]) {
+// Importing custom defined class
+#import "Animal.h"
+
+int mainBasic(int argc, const char * argv[]) {
     // @autoreleasepool will handle memory for us like releasing memory if unused
     @autoreleasepool {
         NSLog(@"Hello, UDEV!");
@@ -63,7 +66,7 @@ int mainBasic1(int argc, const char * argv[]) {
     return 0;
 }
 
-int main(int argc, const char * argv[]) {
+int mainArray(int argc, const char * argv[]) {
     // @autoreleasepool will handle memory for us like releasing memory if unused
     @autoreleasepool {
         // Array
@@ -98,4 +101,25 @@ int main(int argc, const char * argv[]) {
         
     }
     return 0;
+}
+
+
+int main(int argc, const char * argv[]) {
+    // @autoreleasepool will handle memory for us like releasing memory if unused
+    @autoreleasepool {
+        // Defalt initialize
+        Animal *dog = [[Animal alloc] init];
+        // Call method
+        [dog getInfo];
+        // Access variable
+        NSLog(@"The dog name is %@", [dog name]);
+        // Call setter method
+        [dog setName:@"Spot"];
+        NSLog(@"The dog name is %@", [dog name]);
+        
+        // Custom initialize
+        Animal *cat = [[Animal alloc] initWithName:@"Whiskers"];
+        // Access variable
+        NSLog(@"The cat name is %@", [cat name]);
+    }
 }
